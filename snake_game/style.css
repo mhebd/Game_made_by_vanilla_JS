@@ -1,0 +1,64 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #123456;
+}
+
+.container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: #333;
+	padding: 15px;
+	border-radius: 10px;
+}
+
+.game-info {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 20px;
+	color: #ddd;
+	font-weight: 700;
+}
+
+.game-info button {
+	padding: 7px 20px;
+	border: 0px;
+	outline: none;
+	background: #eee;
+	color: #333;
+	border-bottom: 1px solid #000099;
+	cursor: pointer;
+}
+
+.game-info button:active {
+	transform: scale(.98);
+}
+
+.game-wrap {
+	width: 410px;
+	height: 410px;
+	padding: 5px;
+	border: 2px solid #ddd;
+	display: grid;
+	grid-template-columns: repeat(20, 1fr);
+}
+
+.dot {
+	width: 20px;
+	height: 20px;
+}
+
+.dot.snake {
+	background: #fff;
+}
+
+.dot.apple {
+	background: #ff0000;
+	border-radius: 50%;
+}
