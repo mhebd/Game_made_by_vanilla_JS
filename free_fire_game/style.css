@@ -1,0 +1,85 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #222;
+}
+
+.container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 20px;
+	border-radius: 10px;
+	background: #eee;
+}
+
+.game-info {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 20px;
+	font-weight: 700;
+	color: #222;
+}
+
+.game-wrap {
+	display: grid;
+	grid-template-columns: repeat(15, 1fr);
+	width: 310px;
+	height: 310px;
+	padding: 5px;
+	border: 2px dotted #395;
+}
+
+.game-wrap .box {
+	width: 20px;
+	height: 20px;
+}
+
+.box.gun {
+	background-image: url(icon/bullets.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	border-radius: 3px 3px 0 0;
+}
+
+.box.enemy {
+	background-image: url(icon/robot.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.box.bullet {
+	background-image: url(icon/bullet.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.box.boom {
+	background: red;
+}
+
+.btn-wrap {
+	padding-top: 15px;
+	text-align: center;
+}
+
+.btn-wrap button {
+	border: 0px;
+	outline: none;
+	padding: 7px 20px;
+	background: #395;
+	color: #eee;
+	cursor: pointer;
+	border-color: #333;
+	border-width: 0 0 2px 1px;
+	border-style: solid;
+}
+
+.btn-wrap button:active {
+	border-color: transparent;
+}
