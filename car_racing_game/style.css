@@ -1,0 +1,97 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #234;
+}
+
+.container {
+	padding: 20px;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	border-radius: 12px;
+	background: #edeede;
+}
+
+.game-info	{
+	display: flex;
+	padding-bottom: 20px;
+	justify-content: space-between;
+	font-weight: 700;
+	color: #333;
+}
+
+.game-wrap {
+	width: 310px;
+	height: 500px;
+	border: 2px double #789;
+	display: grid;
+	grid-template-columns: repeat(15, 1fr);
+	overflow-y: scroll;
+	overflow-x: hidden;
+	padding: 5px;
+}
+
+.game-wrap::-webkit-scrollbar {
+	width: 0px;
+}
+
+.squire {
+	width: 20px;
+	height: 20px;
+}
+
+.squire {
+	/*background: #aaa;*/
+}
+
+.squire.finish {
+	background: #bbb;
+}
+
+.squire.block {
+	background: url(icon/blade.png);
+	background-size: cover;
+	border-radius: 10px;
+	animation: round .3s ease;
+	animation-iteration-count: infinite;
+}
+
+.squire.car {
+	background: url(icon/car.png);
+	background-size: cover;
+}
+
+.btn-wrap {
+	text-align: center;
+	padding-top: 20px;
+}
+
+.btn-wrap button {
+	outline: none;
+	border: 1px;
+	background: #47f;
+	color: #eee;
+	padding: 7px 20px;
+	border-radius: 3px;
+	border-color: #23f;
+	cursor: pointer;
+}
+
+.btn-wrap button:active {
+	transform: scale(.97);
+}
+
+@keyframes round {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+};
